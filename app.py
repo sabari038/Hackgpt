@@ -5,7 +5,7 @@ from openai import OpenAI
 # Set your environment variable for GitHub Token
 # or use st.secrets if deploying securely on Streamlit Cloud
 
-GITHUB_TOKEN = st.secrets("GITHUB_TOKEN")
+GITHUB_TOKEN = st.secrets["GITHUB_TOKEN"]
 
 if not GITHUB_TOKEN:
     st.error("GITHUB_TOKEN not found in environment variables.")
